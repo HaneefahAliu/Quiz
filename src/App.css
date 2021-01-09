@@ -1,0 +1,82 @@
+.card {
+    width: 80%;
+    margin: auto;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #820263;
+    background: -webkit-linear-gradient(to right, #040348, #FCB001);
+    background: linear-gradient(to right, #040348, #FCB001);
+    flex-flow: row wrap;
+    height: 80%;
+    box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.21);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #FCB001;
+    border-radius: 50%;
+    border-top: 16px solid #040348;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .center-loader {
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    transform: translateX(-50%);
+  }
+
+.score-num {
+    font-size: 100px;
+    padding: 50px;
+    border: 2px dashed #FCB001;
+    border-radius: 100%;
+    height: 125px;
+    width: 125px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 117px;
+    margin: auto;
+    color: #FCB001;
+    animation-name: thescore;
+    animation-duration: 0.5s;
+}
+
+@keyframes thescore {
+    from {
+        font-size: 0;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+
+.result {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result h1 {
+    font-size: 50px;
+}
